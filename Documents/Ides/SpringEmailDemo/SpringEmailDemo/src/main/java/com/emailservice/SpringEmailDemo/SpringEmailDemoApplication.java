@@ -21,7 +21,7 @@ public class SpringEmailDemoApplication {
 
 	@EventListener(ApplicationReadyEvent.class)
 	public void triggerMail() throws MessagingException {
-		senderService.sendSimpleEmail("wendelca@gmail.com", "Este é email teste spring email sender", "Teste de email");
+		senderService.sendSimpleEmail("email@gmail.com", "Este é email teste spring email sender", "Teste de email");
 
 	}
 }
